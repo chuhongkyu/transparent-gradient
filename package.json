@@ -1,8 +1,8 @@
 {
   "name": "transparent-gradient",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "2023.03.13/transparent-gradient/mr.chu",
-  "main": "index.js",
+  "main": "transparentGradient.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
