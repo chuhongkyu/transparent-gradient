@@ -1,8 +1,6 @@
 //module
 
-window.__transparentGradient = transparentGradient;
-
-function transparentGradient(element, direction = 'right') {
+export function transparentGradient(element, direction = 'right') {
     if (!element) {
       throw new Error('element is required');
     }
