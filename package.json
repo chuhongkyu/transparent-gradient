@@ -1,8 +1,8 @@
 {
   "name": "transparent-gradient",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "2023.03.13/transparent-gradient/mr.chu",
-  "main": "transparentGradient.js",
+  "main": "dist/transparentGradient.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +10,23 @@
     "type": "git",
     "url": "git+https://github.com/chuhongkyu/transparent-gradient.git"
   },
-  "keywords": [],
-  "author": "",
+  "files": [
+    "dist",
+    "lib",
+    "!dist/test"
+  ],
+  "keywords": [
+    "transparent",
+    "style",
+    "gradient",
+    "front-end",
+    "css"
+  ],
+  "author": {
+    "name": "hongkyu chu",
+    "email": "chuhongkyu@gmail.com",
+    "url": "https://chuhongkyu.github.io/Mr_chu_HomePage/"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chuhongkyu/transparent-gradient/issues"
