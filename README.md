@@ -3,4 +3,8 @@
 
 Hello, families of developers~ This is a real transparent gradient, not a fake transparent one. I hope it will be helpful for your front desk development.
 
+```
+transparentGradient(target, direction)
+```
+
 2023.03.13/transparent-gradient/mr.chu
