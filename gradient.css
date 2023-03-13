@@ -18,6 +18,14 @@
     flex-direction: column;
 }
 
+.content:nth-of-type(2){
+    background: url('/img/02.jpg') 50% 50%/cover no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
 .desc{
     color: #fff;
 }
@@ -27,7 +35,7 @@
     height: 100%;
 }
 
-[data-tg] [tg]{
+[tg]{
     -webkit-mask-size: 350px 200px;
     mask-size: 350px 200px;
     -webkit-mask-repeat: no-repeat;

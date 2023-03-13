@@ -6,18 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="gradient.css">
-    <script defer src="/index.js"></script>
 </head>
 <body>
     <div id="root">
         <div class="contents">
-            <div class="content" data-tg>
+            <div class="content">
                 <div class="desc" tg>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus repellat maiores. Ab dolorum quisquam voluptatibus nisi, distinctio enim ullam provident nulla odit laborum deserunt ipsa sapiente vitae illo possimus.
                 </div>
             </div>
             <div class="content" data-tg>
-                <img src="/img/02.jpg" alt="02"/>
+                <img class="number2" src="/img/01.jpg" alt="03"/>
             </div>
             <div class="content" data-tg>
                 <img src="/img/03.jpg" alt="03"/>
@@ -26,3 +25,8 @@
     </div>
 </body>
 </html>
+<script src="/index.js"></script>
+<script>
+    // script
+    window.__transparentGradient(document.querySelector('.number2'))
+</script>
