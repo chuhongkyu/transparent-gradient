@@ -17,4 +17,4 @@ export function transparentGradient(element, direction = 'right') {
       -webkit-mask-image: linear-gradient(to ${normalizedDirection},black, transparent), linear-gradient(to ${normalizedDirection},black,transparent);
       mask-image: linear-gradient(to ${normalizedDirection},black, transparent), linear-gradient(to ${normalizedDirection},black,transparent);
     `);
-  }
+}

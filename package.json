@@ -4,7 +4,9 @@
   "description": "2023.03.13/transparent-gradient/mr.chu",
   "main": "dist/transparentGradient.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open --mode=development",
+    "build": "webpack --mode=production"
   },
   "repository": {
     "type": "git",
@@ -31,5 +33,9 @@
   "bugs": {
     "url": "https://github.com/chuhongkyu/transparent-gradient/issues"
   },
-  "homepage": "https://github.com/chuhongkyu/transparent-gradient#readme"
+  "homepage": "https://github.com/chuhongkyu/transparent-gradient#readme",
+  "devDependencies": {
+    "webpack": "^5.76.1",
+    "webpack-cli": "^5.0.1"
+  }
 }
