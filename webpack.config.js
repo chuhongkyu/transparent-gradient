@@ -9,7 +9,7 @@ module.exports = {
     library: 'transparentGradient',
     libraryExport: 'transparentGradient',
     path: path.resolve(__dirname, 'dist'),
-    filename: `transparentGradient.bundle.js`,
+    filename: `transparentGradient.min.js`,
   },
   optimization: {  
     minimize: true,
