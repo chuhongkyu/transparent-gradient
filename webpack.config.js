@@ -2,13 +2,14 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    main:'./src/transparentGradient.js',
-    },
+    transparentGradient:'./src/transparentGradient.js',
+  },
+  mode:'production',
   output: {
-    // 최종 번들링된 자바스크립트
-    filename: 'transparentGradient.js',
-    // dist를 배포용 폴더로 사용
-    path: path.resolve(__dirname, 'dist')
+    library: 'transparentGradient',
+    libraryExport: 'transparentGradient',
+    path: path.resolve(__dirname, 'dist'),
+    filename: `transparentGradient.bundle.js`,
   },
   optimization: {  
     minimize: true,
