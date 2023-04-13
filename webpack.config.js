@@ -7,11 +7,19 @@ module.exports = {
   mode:'production',
   output: {
     library: 'transparentGradient',
-    libraryExport: 'transparentGradient',
     path: path.resolve(__dirname, 'dist'),
     filename: `transparentGradient.min.js`,
   },
   optimization: {  
     minimize: true,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: 'babel-loader',
+        exclude: /node_modules/,
+      },
+    ],
   },
 }
