@@ -1,6 +1,6 @@
 {
   "name": "transparent-gradient",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "2023.03.13/transparent-gradient/mr.chu",
   "main": "dist/transparentGradient.min.js",
   "scripts": {
