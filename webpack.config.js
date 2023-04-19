@@ -8,8 +8,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: `transparentGradient.min.js`,
-    library: 'transparentGradient.default',
+    library: 'transparentGradient',
     libraryTarget: 'umd',
+    globalObject: 'typeof self !== \'undefined\' ? self : this', // globalObject 설정 추가
   },
   optimization: {  
     minimize: true,
