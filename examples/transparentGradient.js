@@ -1,7 +1,4 @@
+import { tGradient } from "../dist/transparentGradient.bundle";
+
 //module
-import { transparentGradient } from '../dist/transparentGradient.min.js'
-
-
-
-transparentGradient(document.querySelector('.number2'))
-
+tGradient(document.querySelector('.__dim'))

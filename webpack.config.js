@@ -1,19 +1,15 @@
 const path = require('path');
 
 module.exports = {
-  entry: {
-    transparentGradient:'./src/transparentGradient.js',
-  },
-  mode:'production',
+  entry: './src/transparentGradient.js',
   output: {
+    filename: 'transparentGradient.bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    filename: `transparentGradient.min.js`,
-    library: 'transparentGradient',
     libraryTarget: 'umd',
-    globalObject: 'typeof self !== \'undefined\' ? self : this', // globalObject 설정 추가
+    library: 'tGradient', 
   },
   optimization: {  
-    minimize: true,
+    minimize: false,
   },
   module: {
     rules: [

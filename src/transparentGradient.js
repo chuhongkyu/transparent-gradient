@@ -1,6 +1,6 @@
 //module
 
-export function transparentGradient(element, direction = 'right') {
+export function tGradient(element, direction = 'right') {
     if (!element) {
       throw new Error('element is required');
     }
