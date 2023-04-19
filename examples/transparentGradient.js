@@ -2,7 +2,7 @@
 
 window.__transparentGradient = transparentGradient();
 
-export function transparentGradient(element, direction = 'right') {
+function transparentGradient(element, direction = 'right') {
     if (!element) {
       throw new Error('element is required');
     }

@@ -6,10 +6,10 @@ module.exports = {
   },
   mode:'production',
   output: {
-    library: 'transparentGradient',
-    libraryTarget: 'umd',
     path: path.resolve(__dirname, 'dist'),
     filename: `transparentGradient.min.js`,
+    library: 'transparentGradient',
+    libraryTarget: 'var',
   },
   optimization: {  
     minimize: true,
