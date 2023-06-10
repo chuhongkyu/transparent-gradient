@@ -5,19 +5,8 @@ module.exports = {
   output: {
     filename: 'transparentGradient.bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    library: 'tGradient',
     libraryTarget: 'umd',
-    library: 'tGradient', 
+    globalObject: 'this',
   },
-  optimization: {  
-    minimize: false,
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: 'babel-loader',
-        exclude: /node_modules/,
-      },
-    ],
-  },
-}
+};
