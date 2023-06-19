@@ -10,7 +10,7 @@ npm i transparent-gradient
 ```
 
 ```
-transparentGradient(target, direction)
+tGradient(target, direction)
 ```
 
 2023.03.13/transparent-gradient/mr.chu
