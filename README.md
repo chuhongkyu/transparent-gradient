@@ -12,5 +12,15 @@ npm i transparent-gradient
 ```
 tGradient(target, direction)
 ```
+First, you have to be the target for the gradient.
+The second is the direction.('right', 'bottom', 'top', 'left')
+
+This is an example of use.
+
+```
+const content = document.querySelector('.number2')
+tGradient(content)
+```
+
 
 2023.03.13/transparent-gradient/mr.chu
