@@ -18,6 +18,9 @@ The second is the direction.('right', 'bottom', 'top', 'left')
 This is an example of use.
 
 ```
+import { tGradient } from "transparent-gradient/lib/transparentGradient";
+
+//target
 const content = document.querySelector('.number2')
 tGradient(content)
 ```
