@@ -1,5 +1,4 @@
-import tGradient from "..transparentGradient.bundle"
+import { tGradient } from "../src/transparentGradient"
 
-//module
 const content2 = document.querySelector('.number2')
 tGradient(content2)

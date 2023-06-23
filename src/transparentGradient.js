@@ -1,6 +1,8 @@
 //module
 
-export default function tGradient(element, direction = 'right') {
+export { tGradient };
+
+function tGradient(element, direction = 'right') {
     if (!element) {
       throw new Error('element is required');
     }
@@ -18,5 +20,3 @@ export default function tGradient(element, direction = 'right') {
       mask-image: linear-gradient(to ${normalizedDirection},black, transparent), linear-gradient(to ${normalizedDirection},black,transparent);
     `);
 }
-
-module.exports = tGradient;
