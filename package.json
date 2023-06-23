@@ -1,6 +1,6 @@
 {
   "name": "transparent-gradient",
-  "version": "1.1.9",
+  "version": "1.2.2",
   "description": "2023.03.13/transparent-gradient/mr.chu",
   "main": "dist/transparentGradient.min.js",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "files": [
     "dist",
-    "lib",
+    "lib/*",
     "!dist/test"
   ],
   "keywords": [
@@ -42,5 +42,17 @@
   },
   "dependencies": {
     "babel-loader": "^9.1.2"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/transparentGradient.js",
+        "default": "./lib/transparentGradient.js"
+      },
+      "require": {
+        "types": "./lib/transparentGradient.js",
+        "default": "./lib/transparentGradient.js"
+      }
+    }
   }
 }
