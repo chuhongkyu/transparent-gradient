@@ -10,7 +10,29 @@ header{
     position: fixed;
     padding-left: $aside-width;
     padding-right: 32px;
+    background: $bg-color;
+    display: flex;
+    .symbol{
+        padding-left: 32px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        img{
+            width: 100px;
+            height: 30px;
+        }
+        .front{
+            position: absolute; 
+            z-index: 1;
+            background: rgb(24, 24, 24);
+            width: 100px;
+            height: 30px;
+        }
+    }
+
     nav{
+        width: 100%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -55,7 +77,7 @@ aside{
         height: $header-height;
         font-size: 16px;
         font-weight: 600;
-        color: black;
+        color: black; 
         transition: opacity .25s;
         .icon{
             height: 100%;
@@ -96,7 +118,7 @@ main{
     padding-top: $header-height;
     padding-left: $aside-width;
     section{
-        padding: 32px;
+        padding: 32px 32px 128px;
         .content{
             display: none;
             padding: 0 32px;
@@ -133,7 +155,7 @@ main{
                     .line{
                         display: flex;
                         span{
-                            margin-right: 0.1rem;
+                            margin-right: 0.2rem;
                         }
                     }
                 }

@@ -1,4 +1,9 @@
+import { tGradient } from "transparent-gradient"
+
 window.__onHandleContents = onHandleContents;
+
+const symbol = document.querySelector('.symbol .front')
+tGradient(symbol);
 
 function onHandleContents(){
     const items = document.querySelectorAll(".items .item[data-index]");

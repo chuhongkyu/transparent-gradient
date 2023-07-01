@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>transparent-gradient</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <div id="root">
         <header>
+            <div class="symbol">
+                <img src="img/transparent.png"  alt="transparent"/>
+                <div class="front"></div>
+            </div>
             <nav>
                 <a href="#"><span>가이드</span></a>
                 <!-- <span>언어변경</span> -->
@@ -35,10 +39,8 @@
             <section>
                 <div class="content active" data-index="1">
                     <h1>시작하기</h1>
-                    <h2>들어가기 전에</h2>
-                    <p></p>
                     <h2>첫 프로젝트 만들어보기</h2>
-                    <p></p>
+                    <p>transparent-gradient는 Node.js를 요구합니다.<br>npm 으로 간편하게 프로젝트에 설치 해주세요.</p>
                     <div class="code-box">
                         <div class="code">
                             <span class="line">
@@ -49,7 +51,33 @@
                             </span>
                         </div>
                     </div>
+                    <h2>JS 에 활용</h2>
+                    <p>transparent-gradient에서 1.2버젼부터 tGradient로 바뀌었습니다.<br>
+                        기존 함수명에 너무 길었기 때문에 tGradient로 사용해주세요.
+                    </p>
+                    <div class="code-box">
+                        <div class="code">
+                            <span class="line">
+                                <span style="color:#FFCB6B;">import</span>
+                                <span style="color:#C3E88D;">{ tGradient }</span>      
+                                <span style="color:#FFCB6B;">from</span>
+                                <span style="color:#C3E88D;">"transparent-gradient"</span>  
+                            </span>
+                        </div>
+                        <div class="code">
+                            <span class="line">
+                                <span style="color:#FFCB6B;">tGradient</span>
+                                <span style="color:#C3E88D;">(target, direction)</span>      
+                            </span>
+                        </div>
+                    </div>
+                    <p>import 를 통해 함수를 불러와주세요.<br>
+                        tGradient는 두개의 파라미터를 가집니다.
+                        target은 그라디언트를 사용할 html 요소고
+                        direction은 그라디언트의 방향입니다.
+                    </p>
                 </div>
+                <!-- 2번 시작 -->
                 <div class="content" data-index="2">
                     <h1>transparent-gradient를<br> 사용해야 하는 이유</h1>
                     <h2>이런 문제점이 있었어요</h2>
