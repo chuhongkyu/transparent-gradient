@@ -4,3 +4,4 @@ node_modules/
 test/
 bower.json
 webpack.*.js
+examples/

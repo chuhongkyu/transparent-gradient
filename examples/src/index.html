@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="root">
+        <header>
+            <nav>
+                <a href="#"><span>가이드</span></a>
+                <!-- <span>언어변경</span> -->
+            </nav>
+        </header>
+        <aside>
+            <div class="logo">
+                <span class="icon">
+                    <img src="img/mrchu.jpeg" alt="logo"/>
+                    <p>transparent-gradient</p>
+                </span>
+            </div>
+            <ul class="items">
+                <li class="item guide">가이드</li>
+                <li class="item active" data-index="1">시작하기</li>
+                <li class="item" data-index="2">transparent-gradient<br>를 사용해야하는 이유</li>
+                <li class="item" data-index="3">지원하는 기능들</li>
+                <li class="item guide">지원</li>
+                <li class="item"data-index="4">연락법</li>
+            </ul>
+        </aside>
+        <main class="main">
+            <section>
+                <div class="content active" data-index="1">
+                    <h1>시작하기</h1>
+                    <h2>들어가기 전에</h2>
+                    <p></p>
+                    <h2>첫 프로젝트 만들어보기</h2>
+                    <p></p>
+                    <div class="code-box">
+                        <div class="code">
+                            <span class="line">
+                                <span style="color:#FFCB6B;">$</span>
+                                <span style="color:#A6ACCD;"></span><span style="color:#C3E88D;">npm</span>
+                                <span style="color:#A6ACCD;"> </span><span style="color:#C3E88D;">i</span>
+                                <span style="color:#A6ACCD;"> </span><span style="color:#C3E88D;">transparent-gradient</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content" data-index="2">
+                    <h1>transparent-gradient를<br> 사용해야 하는 이유</h1>
+                    <h2>이런 문제점이 있었어요</h2>
+                    <p>모든 투명 그라데이션을 만드는 과정은 진짜 투명 그라데이션이 아니였어요.</p>
+                </div>
+                <div class="content" data-index="3">
+
+                </div>
+                <div class="content" data-index="4">
+
+                </div>
+            </section>
+        </main>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded",()=>{
+            window.__onHandleContents();
+        })
+    </script>
+</body>
+
+</html>
