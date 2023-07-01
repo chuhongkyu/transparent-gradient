@@ -30,7 +30,7 @@
                 <li class="item guide">가이드</li>
                 <li class="item active" data-index="1">시작하기</li>
                 <li class="item" data-index="2">transparent-gradient<br>를 사용해야하는 이유</li>
-                <li class="item" data-index="3">지원하는 기능들</li>
+                <li class="item" data-index="3">examples</li>
                 <li class="item guide">지원</li>
                 <li class="item"data-index="4">연락법</li>
             </ul>
@@ -76,18 +76,76 @@
                         target은 그라디언트를 사용할 html 요소고
                         direction은 그라디언트의 방향입니다.
                     </p>
+                    <h2>사용법</h2>
+                    <p>방향 조절</p>
+                    <table>
+                        <tr>
+                            <th>함수명</th>
+                            <th>방향</th>
+                            <th>설명</th>
+                        </tr>
+                        <tr>
+                            <td>tGradient(target)</td>
+                            <td>default</td>
+                            <td>tGradient(target) 기본적으로 default는 right 입니다.</td>
+                        </tr>
+                        <tr>
+                            <td>tGradient(target,right)</td>
+                            <td>right</td>
+                            <td>tGradient(target,right)는 오른쪽 방향으로 그라디언트가 생깁니다.</td>
+                        </tr>
+                        <tr>
+                            <td>tGradient(target,left)</td>
+                            <td>left</td>
+                            <td>tGradient(target,left)는 왼쪽 방향으로 그라디언트가 생깁니다.</td>
+                        </tr>
+                        <tr>
+                            <td>tGradient(target,up)</td>
+                            <td>up</td>
+                            <td>tGradient(target,up)는 위쪽 방향으로 그라디언트가 생깁니다.</td>
+                        </tr>
+                        <tr>
+                            <td>tGradient(target,down)</td>
+                            <td>down</td>
+                            <td>tGradient(target,down)는 아래 방향으로 그라디언트가 생깁니다.</td>
+                        </tr>
+                    </table>
                 </div>
+
                 <!-- 2번 시작 -->
                 <div class="content" data-index="2">
                     <h1>transparent-gradient를<br> 사용해야 하는 이유</h1>
-                    <h2>이런 문제점이 있었어요</h2>
-                    <p>모든 투명 그라데이션을 만드는 과정은 진짜 투명 그라데이션이 아니였어요.</p>
+                    <h2>이런 문제점이 있었어요 😅</h2>
+                    <p>L사 백화점 app 프로젝트를 진행중 디자이너가 blur에 투명을 서서히 주는 그라디언트로 디자인 시안을 주었습니다.<br>
+                        google, stackoverflow등 모든 곳에서 예시들은 흰색 바탕에 흰색 그라디언트를 주거나, 
+                        배경 이미지의 평균 색상 값을 가져와 가짜 투명 그라디언트를 만드는 식으로 작용 했습니다.<br>
+                        그러나 내가 같이 일하는 디자이너의 시안은 이미지가 배경이고 글씨에 투명을 넣어주어야하는 작업이었습니다.<br>
+                        이것을 내가 해결했을 때, 나는 해결하였지만 다른 앱 개발자, 웹 퍼블리셔 와 프론트 엔드들은 굉장히 힘이 들어 했습니다.<br>
+                        나는 그런 이들을 위해서 npm 으로 transparent-gradient를 배포하기로 결심 했습니다.
+                    </p>
                 </div>
                 <div class="content" data-index="3">
-
+                    <h1>Examples</h1>
+                    <h2>활용법들</h2>
+                    <p>이미지 겹치기</p>
+                    <div class="img-box">
+                        <img src="img/01.jpg" alt="01"/>
+                        <img src="img/02.jpg" alt="02"/>
+                        <img src="img/right.png" alt="03"/>
+                    </div>
+                    <p>글씨</p>
+                    <div class="img-box">
+                        <img src="img/text.png" alt="01"/>
+                    </div>    
                 </div>
                 <div class="content" data-index="4">
-
+                    <h1>오너와 연락방법</h1>
+                    <h2>이메일 및 오너 주소</h2>
+                    <p>transparent-gradient는 Mr.chu 개발자의 npm 패키지입니다.
+                        <br>많은이들의 도움이 필요합니다.</p>
+                    <p>깃 레파지토리 : <a href="https://github.com/chuhongkyu/transparent-gradient" target="_blacnk">github.com/chuhongkyu/transparent-gradient</a></p>
+                    <p>이메일 : chuhongkyu@gmail.com</p>
+                    <p>홈페이지 : <a href="https://mrchu.netlify.app/" target="_blacnk">https://mrchu.netlify.app/</a></p>
                 </div>
             </section>
         </main>
