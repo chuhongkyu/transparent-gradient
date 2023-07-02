@@ -27,5 +27,12 @@ const content = document.querySelector('.number2')
 tGradient(content)
 ```
 
+| func | Direction    | desc    |
+| :---:   | :---: | :---: |
+| tGradient(target, 'right') | right   | tGradient(target, 'right') creates a gradient from right to left.  |
+| tGradient(target, 'left') | left  | tGradient(target, 'left') creates a gradient from left to right.  |
+| tGradient(target, 'top') | top  | tGradient(target, 'top') creates a gradient from top to bottom.  |
+| tGradient(target, 'bottom') | bottom  | tGradient(target, 'bottom') creates a gradient from bottom to top.  |
+
 
 2023.03.13/transparent-gradient/mr.chu
