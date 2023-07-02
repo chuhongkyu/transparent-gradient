@@ -11,12 +11,20 @@
     <div id="root">
         <header>
             <div class="symbol">
-                <img src="img/transparent.png"  alt="transparent"/>
+                <img src="img/transparent.png" alt="transparent"/>
                 <div class="front"></div>
             </div>
             <nav>
-                <a href="#"><span>가이드</span></a>
-                <!-- <span>언어변경</span> -->
+                <a href="#"><span>Guide</span></a>
+                <span class="__lang">Language
+                    <div id="lang-select-popup">
+                        <div class="container-tooltip">
+                            <div class="select"><a href="https://transparent-gradient.netlify.app/">한국어</a></div>
+                            <div class="select"><a href="https://transparent-gradient.netlify.app/eng">ENG</a></div>
+                        </div>
+                    </div>
+                </span>
+                
             </nav>
         </header>
         <aside>
@@ -27,20 +35,21 @@
                 </span>
             </div>
             <ul class="items">
-                <li class="item guide">가이드</li>
-                <li class="item active" data-index="1">시작하기</li>
-                <li class="item" data-index="2">transparent-gradient<br>를 사용해야하는 이유</li>
-                <li class="item" data-index="3">examples</li>
-                <li class="item guide">지원</li>
-                <li class="item"data-index="4">연락법</li>
+                <li class="item guide">Guide</li>
+                <li class="item active" data-index="1">Getting Started</li>
+                <li class="item" data-index="2">Reasons to Use transparent-gradient</li>
+                <li class="item" data-index="3">Examples</li>
+                <li class="item guide">Support</li>
+                <li class="item" data-index="4">Contact</li>
             </ul>
         </aside>
         <main class="main">
             <section>
+                <!-- 1번 시작 -->
                 <div class="content active" data-index="1">
-                    <h1>시작하기</h1>
-                    <h2>첫 프로젝트 만들어보기</h2>
-                    <p>transparent-gradient는 Node.js를 요구합니다.<br>npm 으로 간편하게 프로젝트에 설치 해주세요.</p>
+                    <h1>Getting Started</h1>
+                    <h2>Create Your First Project</h2>
+                    <p>transparent-gradient requires Node.js. Please install it in your project using npm.</p>
                     <div class="code-box">
                         <div class="code">
                             <span class="line">
@@ -51,9 +60,9 @@
                             </span>
                         </div>
                     </div>
-                    <h2>JS 에 활용</h2>
-                    <p>transparent-gradient에서 1.2버젼부터 tGradient로 바뀌었습니다.<br>
-                        기존 함수명에 너무 길었기 때문에 tGradient로 사용해주세요.
+                    <h2>Usage in JS</h2>
+                    <p>Starting from version 1.2, transparent-gradient has been renamed to tGradient.<br>
+                        Please use tGradient as the new function name, as the previous one was too long.
                     </p>
                     <div class="code-box">
                         <div class="code">
@@ -71,81 +80,86 @@
                             </span>
                         </div>
                     </div>
-                    <p>import 를 통해 함수를 불러와주세요.<br>
-                        tGradient는 두개의 파라미터를 가집니다.
-                        target은 그라디언트를 사용할 html 요소고
-                        direction은 그라디언트의 방향입니다.
+                    <p>Please import the function using the import statement.<br>
+                        tGradient takes two parameters: target, which is the HTML element to apply the gradient to, and
+                        direction, which specifies the gradient direction.
                     </p>
-                    <h2>사용법</h2>
-                    <p>방향 조절</p>
+                    <h2>Usage</h2>
+                    <p>Adjusting the Direction</p>
                     <table>
                         <tr>
-                            <th>함수명</th>
-                            <th>방향</th>
-                            <th>설명</th>
+                            <th>Function Name</th>
+                            <th>Direction</th>
+                            <th>Description</th>
                         </tr>
                         <tr>
                             <td>tGradient(target)</td>
                             <td>default</td>
-                            <td>tGradient(target) 기본적으로 default는 right 입니다.</td>
+                            <td>tGradient(target) creates a gradient from left to right by default.</td>
                         </tr>
                         <tr>
-                            <td>tGradient(target,'right')</td>
+                            <td>tGradient(target, 'right')</td>
                             <td>right</td>
-                            <td>tGradient(target,'right')는 오른쪽 방향으로 그라디언트가 생깁니다.</td>
+                            <td>tGradient(target, 'right') creates a gradient from right to left.</td>
                         </tr>
                         <tr>
-                            <td>tGradient(target,'left')</td>
+                            <td>tGradient(target, 'left')</td>
                             <td>left</td>
-                            <td>tGradient(target,'left')는 왼쪽 방향으로 그라디언트가 생깁니다.</td>
+                            <td>tGradient(target, 'left') creates a gradient from left to right.</td>
                         </tr>
                         <tr>
-                            <td>tGradient(target,'top')</td>
+                            <td>tGradient(target, 'top')</td>
                             <td>up</td>
-                            <td>tGradient(target,'top')는 위쪽 방향으로 그라디언트가 생깁니다.</td>
+                            <td>tGradient(target, 'top') creates a gradient from top to bottom.</td>
                         </tr>
                         <tr>
-                            <td>tGradient(target,'bottom')</td>
+                            <td>tGradient(target, 'bottom')</td>
                             <td>down</td>
-                            <td>tGradient(target,'bottom')는 아래 방향으로 그라디언트가 생깁니다.</td>
+                            <td>tGradient(target, 'bottom') creates a gradient from bottom to top.</td>
                         </tr>
                     </table>
                 </div>
 
                 <!-- 2번 시작 -->
                 <div class="content" data-index="2">
-                    <h1>transparent-gradient를<br> 사용해야 하는 이유</h1>
-                    <h2>이런 문제점이 있었어요 😅</h2>
-                    <p>L사 백화점 app 프로젝트를 진행중 디자이너가 blur에 투명을 서서히 주는 그라디언트로 디자인 시안을 주었습니다.<br>
-                        google, stackoverflow등 모든 곳에서 예시들은 흰색 바탕에 흰색 그라디언트를 주거나, 
-                        배경 이미지의 평균 색상 값을 가져와 가짜 투명 그라디언트를 만드는 식으로 작용 했습니다.<br>
-                        그러나 내가 같이 일하는 디자이너의 시안은 이미지가 배경이고 글씨에 투명을 넣어주어야하는 작업이었습니다.<br>
-                        이것을 내가 해결했을 때, 나는 해결하였지만 다른 앱 개발자, 웹 퍼블리셔 와 프론트 엔드들은 굉장히 힘이 들어 했습니다.<br>
-                        나는 그런 이들을 위해서 npm 으로 transparent-gradient를 배포하기로 결심 했습니다.
+                    <h1>Reasons to Use transparent-gradient</h1>
+                    <h2>Here are the issues we faced 😅</h2>
+                    <p>While working on an app project for L Department Store, the designer provided a design concept that involved gradually applying transparency to a blur effect using gradients.<br>
+                        We searched everywhere, including Google and Stack Overflow, but all the examples we found demonstrated white gradients on white backgrounds or fake transparent gradients created by averaging the background image's color values.<br>
+                        However, the design provided by our designer had an image as the background and required applying transparency to the text.<br>
+                        Although I was able to find a solution for this, it proved to be quite challenging for other app developers, web publishers, and front-end developers.<br>
+                        To assist them, I decided to publish transparent-gradient on npm.
                     </p>
                 </div>
+
+                <!-- 3번 시작 -->
                 <div class="content" data-index="3">
                     <h1>Examples</h1>
-                    <h2>활용법들</h2>
-                    <p>이미지 겹치기</p>
+                    <h2>Usage Examples</h2>
+                    <p>Overlapping Images</p>
                     <div class="img-box">
                         <img src="img/01.jpg" alt="01"/>
                         <img src="img/02.jpg" alt="02"/>
                         <img src="img/right.png" alt="03"/>
                     </div>
-                    <p>글씨</p>
+                    <p>Text</p>
                     <div class="img-box">
-                        <img src="img/text.png" alt="01"/>
+                        <div class="apply">
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, blanditiis facere quos cum assumenda vero at ipsum sapiente ad nesciunt non voluptate doloribus! Quis unde illo fugit neque optio deserunt!</p>
+                            </div>
+                            <img src="img/03.jpg" alt="01"/>
+                        </div>
                     </div>    
                 </div>
                 <div class="content" data-index="4">
-                    <h1>오너와 연락방법</h1>
-                    <h2>이메일 및 오너 주소</h2>
-                    <p>transparent-gradient는 Mr.chu 개발자의 npm 패키지입니다.
-                        <br>많은이들의 도움이 필요합니다.</p>
-                    <p>깃 레파지토리 : <a href="https://github.com/chuhongkyu/transparent-gradient" target="_blacnk">github.com/chuhongkyu/transparent-gradient</a></p>
-                    <p>이메일 : chuhongkyu@gmail.com</p>
-                    <p>홈페이지 : <a href="https://mrchu.netlify.app/" target="_blacnk">https://mrchu.netlify.app/</a></p>
+                    <h1>Contact the Owner</h1>
+                    <h2>Email and Owner's Address</h2>
+                    <p>transparent-gradient is an npm package developed by Mr. Chu.
+                        <br>It requires the help of many individuals.</p>
+                    <p>GitHub Repository: <a href="https://github.com/chuhongkyu/transparent-gradient" target="_blank">github.com/chuhongkyu/transparent-gradient</a></p>
+                    <p>Email: chuhongkyu@gmail.com</p>
+                    <p>Website: <a href="https://mrchu.netlify.app/" target="_blank">https://mrchu.netlify.app/</a></p>
                 </div>
             </section>
         </main>

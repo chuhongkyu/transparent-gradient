@@ -1,7 +1,7 @@
 # 📚 Transparent gradient
 
-[Official](https://transparent-gradient.netlify.app/) 
-- https://transparent-gradient.netlify.app/
+[Official](https://transparent-gradient.netlify.app/eng.html) 
+- https://transparent-gradient.netlify.app/eng.html
 
 <img src="./examples/src/img/right.png" alt="ss" width="20%" height="20%" /><img src="./examples/src/img/text.png" alt="ss" width="20%" height="20%" />
 

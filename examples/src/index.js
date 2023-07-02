@@ -5,6 +5,9 @@ window.__onHandleContents = onHandleContents;
 const symbol = document.querySelector('.symbol .front')
 tGradient(symbol, 'left');
 
+const text = document.querySelector('.img-box .apply .text')
+tGradient(text, 'right');
+
 function onHandleContents(){
     const items = document.querySelectorAll(".items .item[data-index]");
     

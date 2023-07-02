@@ -57,6 +57,54 @@ header{
             color: rgb(60, 60, 67);
             transition: color .25s;
         }
+        .__lang{
+            cursor: pointer;
+            position: relative;
+            &:hover{
+                #lang-select-popup{
+                    display: flex;
+                }
+            }
+        }
+        #lang-select-popup{
+            position: absolute;
+            right: 0;
+            top: 100%;
+            z-index: 99;
+            height: fit-content;
+            display: none;
+            .container-tooltip{
+                width: 78px;
+                right: 0;
+                top: 0;
+                border-radius: 8px;
+                padding: 14px 8px 14px 8px;
+                background: rgba(0, 0, 0, 0.8);
+                backdrop-filter: blur(4px);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
+                .select{
+                    max-width: 100px;
+                    height: 13px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a{
+                        color: inherit;
+                        color: #fff;
+                    }
+                    &:not(:last-of-type){
+                        margin-bottom: 12px;
+                    }
+                    &:hover{
+                        
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -190,6 +238,20 @@ main{
             .img-box{
                 width: 100%;
                 display: flex;
+                .apply{
+                    display: block;
+                    width: max(20vw,150px);
+                    height: max(20vw,150px);
+                    position: relative;
+                    .text{
+                        z-index: 1;
+                        position: absolute;
+                        left: 1rem;
+                        bottom: 1rem;
+                        line-height: 98%;
+                        color: white;
+                    }
+                }
                 img{
                     display: block;
                     width: max(20vw,150px);
