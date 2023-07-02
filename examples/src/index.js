@@ -3,7 +3,7 @@ import { tGradient } from "transparent-gradient"
 window.__onHandleContents = onHandleContents;
 
 const symbol = document.querySelector('.symbol .front')
-tGradient(symbol);
+tGradient(symbol, 'left');
 
 function onHandleContents(){
     const items = document.querySelectorAll(".items .item[data-index]");

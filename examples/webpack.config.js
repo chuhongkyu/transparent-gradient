@@ -5,10 +5,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'none',
-  entry: ['./src/index.js', './src/scss/index.scss'],
+  entry: ['./src/index.js', './src/scss/index.scss','./src/eng.js'],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js'
+    filename: 'main.js'
   },
   module: {
     rules: [
@@ -40,6 +40,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/eng.html',
+      filename: 'eng.html',
+      chunks: ['eng'],
     }),
     new MiniCssExtractPlugin({
       filename: 'css/style.css'
