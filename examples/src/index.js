@@ -8,6 +8,9 @@ tGradient(symbol, 'left');
 const text = document.querySelector('.img-box .apply .text')
 tGradient(text, 'right');
 
+const trans = document.querySelector('.img-box .apply .__trans')
+tGradient(trans, 'left');
+
 function onHandleContents(){
     const items = document.querySelectorAll(".items .item[data-index]");
     

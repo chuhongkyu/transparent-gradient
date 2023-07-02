@@ -243,6 +243,13 @@ main{
                     width: max(20vw,150px);
                     height: max(20vw,150px);
                     position: relative;
+                    margin-right: max(1vw,5px);
+                    .__trans{
+                        z-index: 1;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                    }
                     .text{
                         z-index: 1;
                         position: absolute;
