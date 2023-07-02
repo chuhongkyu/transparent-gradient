@@ -8,6 +8,7 @@ header{
     font-size: 16px;
     font-weight: 400;
     position: fixed;
+    z-index: 98;
     padding-left: $aside-width;
     padding-right: 32px;
     background: $bg-color;
