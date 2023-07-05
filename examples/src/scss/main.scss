@@ -13,6 +13,10 @@ header{
     padding-right: 32px;
     background: $bg-color;
     display: flex;
+    @media screen and (max-width : 960px ){
+        padding-left: 0px;
+        transition: 300ms;
+    }
     .symbol{
         padding-left: 32px;
         height: 100%;
@@ -110,6 +114,10 @@ header{
 }
 
 aside{
+    @media screen and (max-width : 960px ){
+        left: -$aside-width;
+        transition: 300ms;
+    }
     background: $nav-color;
     width: $aside-width;
     position: fixed;
@@ -118,6 +126,7 @@ aside{
     left: 0;
     height: 100vh;
     padding: 0 32px 96px;
+    transition: 300ms;
     .logo{
         display: flex;
         align-items: center;
@@ -166,8 +175,23 @@ aside{
 main{
     padding-top: $header-height;
     padding-left: $aside-width;
+    @media screen and (max-width : 960px ){
+        padding-left: 0px;
+        transition: 300ms;
+    }
+    @media screen and (max-width : 740px ){
+        transition: 300ms;
+        section{
+            padding: 32px 0 128px;
+        }
+    }
     section{
         padding: 32px 32px 128px;
+        @media screen and (max-width : 740px ){
+            transition: 300ms;
+            padding: 32px 0px 128px;
+        }
+
         .content{
             display: none;
             padding: 0 32px;
@@ -194,9 +218,11 @@ main{
                 font-weight: 400;
             }
             table{
+                width: 100%;
                 display: block;
                 border-collapse: collapse;
                 margin: 20px 0;
+                overflow-x: scroll;
                 tr{
                     border-bottom: 1px solid rgb(128, 128, 128);
                 }
@@ -228,6 +254,9 @@ main{
                     padding: 20px;
                     display: flex;
                     align-items: center;
+                    @media screen and (max-width : 740px ){
+                        font-size: 13px;
+                    }
                     .line{
                         display: flex;
                         span{
