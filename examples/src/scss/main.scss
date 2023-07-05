@@ -88,16 +88,15 @@ header{
                 flex-direction: column;
                 position: relative;
                 .select{
-                    max-width: 100px;
+                    max-width: 120px;
                     height: 13px;
+                    font-weight: 500;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    a{
-                        white-space: nowrap;
-                        color: inherit;
-                        color: #fff;
-                    }
+                    color: #fff;
+                    white-space: nowrap;
+                    
                     &:not(:last-of-type){
                         margin-bottom: 12px;
                     }
