@@ -16,7 +16,7 @@ module.exports = {
       extensions: [".tsx", ".ts", ".js"],
   },
   output: {
-    filename: "ransparentGradient.bundle.js",
+    filename: "transparentGradient.js",
     path: path.resolve(__dirname, 'lib'),
     library: 'tGradient',
     libraryTarget: 'umd',
