@@ -1,12 +1,14 @@
-export function tGradient(element, direction = 'right') {
-    if (!element) {
-      throw new Error('element is required');
+import { ITarget } from "./tGradientType";
+
+export function tGradient({target, direction = 'right'}:ITarget) {
+    if (!target) {
+      throw new Error('target is required');
     }
   
     const validDirections = ['right', 'bottom', 'top', 'left'];
     const normalizedDirection = validDirections.includes(direction) ? direction : 'right';
   
-    element.setAttribute('style', `
+    target.setAttribute('style', `
       -webkit-mask-size: cover;
       mask-size: cover;
       -webkit-mask-repeat: no-repeat;
