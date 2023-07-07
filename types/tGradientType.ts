@@ -1,4 +1,4 @@
 export interface ITarget {
-    target: HTMLElement|string,
+    target: HTMLElement,
     direction: string | null
 }

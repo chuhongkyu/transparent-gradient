@@ -18,9 +18,10 @@ module.exports = {
   output: {
     filename: "transparentGradient.js",
     path: path.resolve(__dirname, 'lib'),
-    library: 'tGradient',
-    libraryTarget: 'umd',
     globalObject: 'this',
+    libraryTarget: 'umd',
   },
-
+  optimization: {
+    minimize: false, // 압축 비활성화
+  },
 };
