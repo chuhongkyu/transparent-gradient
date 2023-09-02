@@ -1,4 +1,4 @@
-**/.*
+/.git
 *.iml
 node_modules/
 test/

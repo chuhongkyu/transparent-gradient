@@ -1,6 +1,6 @@
 {
   "name": "transparent-gradient",
-  "version": "1.2.7",
+  "version": "1.2.9",
   "description": "2023.03.13/transparent-gradient/mr.chu",
   "main": "lib/transparentGradient.js",
   "types": "lib/transparentGradient.d.ts",
@@ -17,7 +17,9 @@
   "files": [
     "dist",
     "lib/*",
-    "!dist/test"
+    "!dist/test",
+    "types/*",
+    "transparentGradient.js"
   ],
   "keywords": [
     "transparent",
