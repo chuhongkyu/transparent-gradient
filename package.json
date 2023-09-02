@@ -3,10 +3,10 @@
   "version": "1.2.6",
   "description": "2023.03.13/transparent-gradient/mr.chu",
   "main": "lib/transparentGradient.js",
-  "types" : "lib/transparentGradient.d.ts",
+  "types": "lib/transparentGradient.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch" : "webpack --watch",
+    "watch": "webpack --watch",
     "start": "webpack serve --open --mode=development",
     "build": "webpack --mode=production"
   },
