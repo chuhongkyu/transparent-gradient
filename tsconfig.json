@@ -1,10 +1,9 @@
 {
     "compilerOptions": {
-        "outDir": "./lib/",
-        "sourceMap": true,
-        "noImplicitAny": true,
-        "module": "es6",
-        "target": "es5",
-        "allowJs": true
+      "target": "ES6",
+      "module": "CommonJS",
+      "outDir": "./lib", // 컴파일된 파일이 저장될 디렉토리
+      "strict": true,
+      "esModuleInterop": true
     }
-}
+  }
