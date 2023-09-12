@@ -17,7 +17,7 @@ tGradient(target, direction)
 ```
 First, you have to be the target for the gradient.
 The second is the direction.('right', 'bottom', 'top', 'left')
-
+**You need to apply 'position: absolute' to the target.(asterisks)**
 This is an example of use.
 
 ```
