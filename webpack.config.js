@@ -17,6 +17,7 @@ module.exports = {
   output: {
     filename: "transparentGradient.js",
     path: path.resolve(__dirname, 'lib'),
+    libraryTarget: 'commonjs2',
   },
   optimization: {
     minimize: false, // 압축 비활성화

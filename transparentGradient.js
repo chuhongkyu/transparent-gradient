@@ -4,9 +4,8 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it uses a non-standard name for the exports (exports).
 (() => {
 var exports = __webpack_exports__;
-var __webpack_unused_export__;
 
-__webpack_unused_export__ = ({ value: true });
+Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tGradient = ({ target, direction }) => {
     let main = null; // main을 Element 또는 null로 타입 지정
     if (typeof target === "string") {
@@ -30,9 +29,10 @@ const tGradient = ({ target, direction }) => {
     mask-image: linear-gradient(to ${normalizedDirection}, black, transparent), linear-gradient(to ${normalizedDirection}, black, transparent);
   `);
 };
-__webpack_unused_export__ = tGradient;
+exports["default"] = tGradient;
 
 })();
 
+module.exports = __webpack_exports__;
 /******/ })()
 ;

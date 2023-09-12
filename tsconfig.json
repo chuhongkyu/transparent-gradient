@@ -1,9 +1,9 @@
 {
-    "compilerOptions": {
-      "target": "ES6",
-      "module": "CommonJS",
-      "outDir": "./lib", // 컴파일된 파일이 저장될 디렉토리
-      "strict": true,
-      "esModuleInterop": true
-    }
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs", // 여기를 commonjs로 설정
+    "outDir": "./lib",
+    "strict": true,
+    "esModuleInterop": true
   }
+}
