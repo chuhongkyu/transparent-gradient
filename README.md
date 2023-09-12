@@ -3,7 +3,7 @@
 [Official](https://transparent-gradient.netlify.app/eng.html) 
 - https://transparent-gradient.netlify.app/eng.html
 
-<img src="./examples/src/img/main_img.png" alt="main" width="20%" height="20%" />
+<img src="./examples/src/img/left.png" alt="main" width="70%" height="30%" />
 <img src="./examples/src/img/right.png" alt="ss" width="20%" height="20%" /><img src="./examples/src/img/text.png" alt="ss" width="20%" height="20%" />
 
 Hello, families of developers~ This is a real transparent gradient, not a fake transparent one. I hope it will be helpful for your front desk development.
