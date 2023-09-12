@@ -28,7 +28,7 @@ const content = document.querySelector('.target')
 tGradient(content)
 ```
 
-- example url - [https://codesandbox.io/s/interesting-mcnulty-dmj28y?file=/src/styles.css]
+- example url - [https://codesandbox.io/s/transparent-gradient-profile-dmj28y]
 
 | func | Direction    | desc    |
 | :---:   | :---: | :---: |
