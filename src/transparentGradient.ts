@@ -1,6 +1,4 @@
-import { ITarget } from "./tGradientType";
-
-const tGradient = ({ target, direction }: ITarget) => {
+const tGradient = (target: string | Element, direction: string = 'right') => {
   let main: Element | null = null; // main을 Element 또는 null로 타입 지정
 
   if (typeof target === "string") {
@@ -14,8 +12,8 @@ const tGradient = ({ target, direction }: ITarget) => {
   }
 
   const validDirections = ['right', 'bottom', 'top', 'left'];
-  const normalizedDirection = direction && validDirections.includes(direction) ? direction : 'right';
-  
+  const normalizedDirection = validDirections.includes(direction) ? direction : 'right';
+
   main.setAttribute('style', `
     -webkit-mask-size: cover;
     mask-size: cover;

@@ -21,12 +21,14 @@ The second is the direction.('right', 'bottom', 'top', 'left')
 This is an example of use.
 
 ```
-import { tGradient } from "transparent-gradient/lib/transparentGradient";
+import tGradient from "transparent-gradient";
 
 //target
-const content = document.querySelector('.number2')
+const content = document.querySelector('.target')
 tGradient(content)
 ```
+
+- example url - [https://codesandbox.io/s/interesting-mcnulty-dmj28y?file=/src/styles.css]
 
 | func | Direction    | desc    |
 | :---:   | :---: | :---: |
