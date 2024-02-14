@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { TGradient } from './transparentGradient'; 
-import { ITGprops } from './@types/tgTypes';
 
-export function Tgradient({dir, children, wrapperClass, className}:ITGprops){
+export function Tgradient({dir, children, wrapperClass, className}){
     const gradientRef = useRef<HTMLDivElement>(null);
     useEffect(() => {
         if (gradientRef.current) {

@@ -40,7 +40,7 @@ import { Tgradient } from "transparent-gradient";
   <p>transparent wow</p>
 </Tgradient>
 ```
-
+codesandbox - [example](https://codesandbox.io/p/sandbox/transparent-gradient-react-36rs7d)
 
 
 ### What does it look like? JS
@@ -67,6 +67,6 @@ This is an example of use.
 | new TGradient(target, 'top') | top  | new TGradient(target, 'top') creates a gradient from top to bottom.  |
 | new TGradient(target, 'bottom') | bottom  | new TGradient(target, 'bottom') creates a gradient from bottom to top.  |
 
-- example url - [https://codesandbox.io/s/transparent-gradient-profile-dmj28y]
+codesandbox - [example](https://codesandbox.io/p/sandbox/transparent-gradient-react-36rs7d?)
 
 2023.03.13/transparent-gradient/mr.chu
