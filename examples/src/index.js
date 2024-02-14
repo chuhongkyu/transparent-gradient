@@ -1,9 +1,9 @@
-import { tGradient } from "transparent-gradient"
+import { TGradient } from "transparent-gradient"
 
 window.__onHandleContents = onHandleContents;
 
 const symbol = document.querySelector('.symbol .front')
-tGradient(symbol, 'left');
+const gradient = new TGradient(symbol, 'left');
 
 function onHandleContents(){
     const items = document.querySelectorAll(".items .item[data-index]");

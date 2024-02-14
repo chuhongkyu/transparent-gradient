@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs", // 여기를 commonjs로 설정
-    "outDir": "./lib",
+    "module": "ES6",
+    "esModuleInterop": true,
     "strict": true,
-    "esModuleInterop": true
-  }
+    "outDir": "./build",
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+  },
+  "include": ["src/**/*"],
 }
