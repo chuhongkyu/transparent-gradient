@@ -5,6 +5,7 @@
     "strict": true,
     "outDir": "./build",
     "declaration": true,
+    "jsx": "react",
     "allowSyntheticDefaultImports": true,
   },
   "include": ["src/**/*"],

@@ -63,27 +63,27 @@
                         </div>
                     </div>
                     <h2>JS 에 활용</h2>
-                    <p>transparent-gradient에서 1.3.1버젼부터 tGradient로 바뀌었습니다.<br>
-                        기존 함수명에 너무 길었기 때문에 tGradient로 사용해주세요.
+                    <p>transparent-gradient에서 1.3.5버젼부터 TGradient로 바뀌었습니다.<br>
+                        기존 함수명에 너무 길었기 때문에 TGradient로 사용해주세요.
                     </p>
                     <div class="code-box">
                         <div class="code">
                             <span class="line">
                                 <span style="color:#FFCB6B;">import</span>
-                                <span style="color:#C3E88D;"> tGradient </span>      
+                                <span style="color:#C3E88D;">{ TGradient }</span>      
                                 <span style="color:#FFCB6B;">from</span>
                                 <span style="color:#C3E88D;">"transparent-gradient"</span>  
                             </span>
                         </div>
                         <div class="code">
                             <span class="line">
-                                <span style="color:#FFCB6B;">tGradient</span>
+                                <span style="color:#FFCB6B;">new TGradient</span>
                                 <span style="color:#C3E88D;">(target, direction)</span>      
                             </span>
                         </div>
                     </div>
                     <p>import 를 통해 함수를 불러와주세요.<br>
-                        tGradient는 두개의 파라미터를 가집니다.
+                        TGradient는 두개의 파라미터를 가집니다.
                         target은 그라디언트를 사용할 html 요소고
                         direction은 그라디언트의 방향입니다.
                     </p>
@@ -91,34 +91,34 @@
                     <p>방향 조절</p>
                     <table>
                         <tr>
-                            <th>함수명</th>
+                            <th>사용법</th>
                             <th>방향</th>
                             <th>설명</th>
                         </tr>
                         <tr>
-                            <td>tGradient(target)</td>
+                            <td>new TGradient(target)</td>
                             <td>default</td>
-                            <td>tGradient(target) 기본적으로 default는 right 입니다.</td>
+                            <td>new TGradient(target) 기본적으로 default는 right 입니다.</td>
                         </tr>
                         <tr>
-                            <td>tGradient(target,'right')</td>
+                            <td>new TGradient(target,'right')</td>
                             <td>right</td>
-                            <td>tGradient(target,'right')는 오른쪽 방향으로 그라디언트가 생깁니다.</td>
+                            <td>new TGradient(target,'right')는 오른쪽 방향으로 그라디언트가 생깁니다.</td>
                         </tr>
                         <tr>
-                            <td>tGradient(target,'left')</td>
+                            <td>new TGradient(target,'left')</td>
                             <td>left</td>
-                            <td>tGradient(target,'left')는 왼쪽 방향으로 그라디언트가 생깁니다.</td>
+                            <td>new TGradient(target,'left')는 왼쪽 방향으로 그라디언트가 생깁니다.</td>
                         </tr>
                         <tr>
-                            <td>tGradient(target,'top')</td>
+                            <td>new TGradient(target,'top')</td>
                             <td>top</td>
-                            <td>tGradient(target,'top')는 위쪽 방향으로 그라디언트가 생깁니다.</td>
+                            <td>new TGradient(target,'top')는 위쪽 방향으로 그라디언트가 생깁니다.</td>
                         </tr>
                         <tr>
-                            <td>tGradient(target,'bottom')</td>
+                            <td>new TGradient(target,'bottom')</td>
                             <td>bottom</td>
-                            <td>tGradient(target,'bottom')는 아래 방향으로 그라디언트가 생깁니다.</td>
+                            <td>new TGradient(target,'bottom')는 아래 방향으로 그라디언트가 생깁니다.</td>
                         </tr>
                     </table>
                 </div>

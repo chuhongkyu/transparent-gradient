@@ -21,10 +21,11 @@ class TGradient {
         this.applyStyle(main);
     }
 
-    private applyStyle(main: Element): void {
+    public applyStyle(main: Element): void {
         const normalizedDirection = this.validDirections.includes(this.direction) ? this.direction : 'right';
 
         main.setAttribute('style', `
+            position: absoulte;
             -webkit-mask-size: cover;
             mask-size: cover;
             -webkit-mask-repeat: no-repeat;

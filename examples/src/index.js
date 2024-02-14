@@ -18,7 +18,6 @@ function onHandleContents(){
     
         const contents = document.querySelectorAll(".content[data-index]");
     
-        // 각 컨텐츠 요소에 active 클래스를 추가하거나 제거합니다.
         contents.forEach(function(content) {
           if (content.getAttribute("data-index") === index) {
             content.classList.add("active");
